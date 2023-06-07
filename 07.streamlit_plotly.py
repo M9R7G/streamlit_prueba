@@ -15,7 +15,7 @@ def main():
 
     st.title("Streamlit App. & Plotly.")
     with st.expander(label = "DataFrame - Accidentes Bicicletas 2021", expanded = False):
-        df = pd.read_csv(filepath_or_buffer = "sources/AccidentesBicicletas_2021.csv", sep = ";")
+        df = pd.read_csv(filepath_or_buffer = "AccidentesBicicletas_2021.csv", sep = ";")
         st.dataframe(df)
 
     with st.expander(label = "DataFrame - Accidentes Bicicletas 2021 GroupBy Distrito", expanded = False):    
